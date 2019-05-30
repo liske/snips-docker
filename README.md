@@ -9,7 +9,7 @@ This is yet another docker image for the [Snips Voice Assistant](https://snips.a
 - support multi room setups using a [Satellite Configuration](https://docs.snips.ai/articles/platform/satellites)
 - keep it up to date
 
-This image is loosly based on (David Bilay's](https://github.com/dYalib) [snips-docker repository](https://github.com/dYalib/snips-docker).
+This image is loosly based on [David Bilay's](https://github.com/dYalib) [snips-docker repository](https://github.com/dYalib/snips-docker).
 
 
 ## Prerequisites
