@@ -1,15 +1,18 @@
+ARG snipsver=$snipsver
+
 FROM debian:stretch-slim
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y apt-transport-https ca-certificates
 
 COPY assets/snips.list /etc/apt/sources.list.d/
 COPY assets/snips-debian.gpg /etc/apt/trusted.gpg.d/
+COPY assets/sources.list /etc/apt/
 
-ARG snipsver=0.63.2
+ARG snipsver
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-        snips-satellite=$snipsver
-
-USER _snips
-
-ENTRYPOINT ["/usr/bin/snips-satellite"]
+        snips-platform-voice=$snipsver \
+        snips-skill-server=$snipsver \
+        snips-template=$snipsver \
+        snips-tts=$snipsver \
+        snips-watch=$snipsver

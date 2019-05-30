@@ -1,0 +1,6 @@
+ARG snipsver=0.63.2
+
+FROM liske/snips-platform:$snipsver
+
+USER _snips
+ENTRYPOINT ["/usr/bin/snips-nlu"]

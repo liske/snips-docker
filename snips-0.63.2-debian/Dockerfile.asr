@@ -1,4 +1,0 @@
-FROM liske/snips-platform:0.63.2
-
-USER _snips
-ENTRYPOINT ["/usr/bin/snips-asr"]
