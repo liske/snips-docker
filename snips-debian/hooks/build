@@ -5,6 +5,6 @@ snipsver=${IMAGE_NAME#*:}
 exec docker build \
     --build-arg "imgbase=liske/snips-platform:$snipsver" \
     --build-arg "snipsver=$snipsver" \
-    --build-arg VCS_REF=$(git rev-parse — short HEAD) \
+    --build-arg VCS_REF=$(git rev-parse --short HEAD) \
     --build-arg BUILD_DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ") \
     -f "$DOCKERFILE_PATH" -t "$IMAGE_NAME" .
