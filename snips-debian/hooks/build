@@ -1,6 +1,6 @@
 #!/bin/bash
 
-snipsver=${IMAGE_NAME%%:}
+snipsver=${IMAGE_NAME#*:}
 
 exec docker build \
     --build-arg "imgbase=liske/snips-platform:$snipsver" \
