@@ -1,4 +1,4 @@
-ARG snipsver=0.63.2
+ARG snipsver
 ARG imgbase=snips-platform:$snipsver
 
 FROM $imgbase

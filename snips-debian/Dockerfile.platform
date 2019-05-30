@@ -1,4 +1,4 @@
-ARG snipsver=$snipsver
+ARG snipsver
 
 FROM debian:stretch-slim
 
