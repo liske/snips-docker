@@ -1,6 +1,7 @@
 ARG snipsver=0.63.2
+ARG imgbase=snips-platform:$snipsver
 
-FROM liske/snips-platform:$snipsver
+FROM $imgbase
 
 USER _snips
 ENTRYPOINT ["/usr/bin/snips-audio-server"]
