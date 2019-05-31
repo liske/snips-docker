@@ -11,6 +11,7 @@ COPY assets/sources.list /etc/apt/
 ARG snipsver
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        mosquitto- \
         snips-platform-voice=$snipsver \
         snips-skill-server=$snipsver \
         snips-template=$snipsver \
