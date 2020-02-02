@@ -1,3 +1,9 @@
+# soNOs has killed Snips
+
+[SONOS has killed Snips on November 14, 2019](https://investors.sonos.com/news-and-events/investor-news/latest-news/2019/Sonos-Announces-Acquisition-of-Snips/default.aspx)
+
+---
+
 # Snips
 
 ## About
